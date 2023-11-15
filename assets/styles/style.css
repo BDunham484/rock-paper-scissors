@@ -30,11 +30,12 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
-main section {
+main .game-board {
     width: 70vw;
-    height: 60vh;
+    height: 50vh;
     background-color: #cacfed;
     text-align: center;
     border-radius: 15px;
@@ -77,7 +78,7 @@ main section {
     justify-content: space-around;
 }
 
-.controlPanel button {
+.buttons {
     padding: 10px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -87,7 +88,7 @@ main section {
     font-size: 20px;
 }
 
-.controlPanel button:hover {
+.buttons:hover {
     cursor: pointer;
 }
 
@@ -97,4 +98,34 @@ main section {
     background-color: #cacfed;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
+
+#results {
+    display: none;
+}
+
+.results {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 10vh;
+    background-color: azure;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#win-lose {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+
+
+
+
